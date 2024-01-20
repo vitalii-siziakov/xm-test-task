@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@font-face {
+  font-family: 'Bebas Neue Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/BebasNeuePro-Bold.woff2') format('woff2'),
+    url('../assets/fonts/BebasNeuePro-Bold.woff') format('woff');
+}
+
+:root {
+  --color_01: #000;
+  --color_02: #fff;
+  --color_03: #ddd;
+  --color_04: #29a643;
+  --color_05: #d51820;
+  --color_06: #ffc255;
+  --color_07: rgba(167, 167, 167, 0.2);
+  --color_08: rgba(140, 140, 140, 0.1);
+  --color_09: #fff8d6;
+  --color_10: #b1ffc2;
+  --color_11: #ffa3a6;
+  --color_12: #0b0819;
+  --color_13: #888;
+  --color_14: #444;
+  --color_15: #f4f4f4;
+  --color_16: #cdcdcd;
+  --color_17: #252525;
+  --color_18: #201d27;
+  --color_19: #b1b1b1;
+  --color_20: #ccc;
+  --color_21: #efefef;
+  --gradient_01: linear-gradient(
+    180deg,
+    rgba(32, 46, 71, 0.65) 36.53%,
+    rgba(32, 46, 71, 0.62) 57.69%,
+    rgba(32, 46, 71, 0.58) 78.84%,
+    rgba(32, 46, 71, 0) 100%
+  );
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color_02);
+  background-color: var(--color_18);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color_02);
+}
+
+b {
+  font-weight: 700;
+}
+
+hr {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+hr,
+ul,
+li,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  padding-inline-start: unset;
+}
+
+input {
+  padding-block: 0;
+  padding-inline: 0;
+  padding: 0;
+  border: unset;
+}
+
+address {
+  font-style: unset;
+}
+
+.visually-hidden {
+  display: none !important;
+}

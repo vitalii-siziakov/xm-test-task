@@ -1,0 +1,37 @@
+.event__gallery {
+  color: var(--color_17);
+  background-color: var(--color_15);
+  padding-top: 71px;
+  padding-bottom: 71px;
+}
+
+.event__gallery__title {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 39px;
+}
+
+@media screen and (max-width: 1190px) {
+  .event__gallery {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .event__gallery {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .event__gallery__title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 39px;
+  }
+}

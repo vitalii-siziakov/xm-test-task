@@ -1,0 +1,172 @@
+.cryptocurrencies {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 18px;
+  padding-top: 32px;
+  padding-bottom: 90px;
+}
+
+.cryptocurrencies__line-break {
+  display: none;
+}
+
+.cryptocurrency__card {
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid var(--color_07);
+  background: var(--color_08);
+
+  width: 204px;
+  height: 150px;
+}
+
+.cryptocurrency__introduction {
+  display: flex;
+  align-items: center;
+  column-gap: 11px;
+}
+
+.cryptocurrency__img {
+  width: 33px;
+  height: 33px;
+}
+
+.cryptocurrency__name {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.cryptocurrency__abbreviation {
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.cryptocurrency__fullname {
+  background-color: var(--color_09);
+  padding: 2px 8px;
+  border-radius: 3.8px;
+
+  color: var(--color_01);
+  font-family: Roboto;
+  font-size: 8.5px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cryptocurrency__stats::before {
+  content: '';
+  display: block;
+  opacity: 0.15;
+  background-color: var(--color_02);
+
+  height: 2px;
+  margin-top: 20px;
+  margin-bottom: 13px;
+}
+
+.cryptocurrency__price {
+  font-family: Roboto;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.cryptocurrency__price__change {
+  margin-top: 9px;
+
+  font-family: Roboto;
+  font-size: 13.3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@media screen and (max-width: 1150px) {
+  .cryptocurrencies__line-break {
+    display: block;
+    width: 100%;
+    height: 42px;
+  }
+
+  .cryptocurrencies {
+    padding-top: 25px;
+    padding-bottom: 70px;
+  }
+
+  .cryptocurrency__card {
+    padding: 12px 15px;
+    width: 209px;
+    height: 128px;
+  }
+
+  .cryptocurrency__img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cryptocurrency__abbreviation {
+    font-size: 12.2px;
+  }
+
+  .cryptocurrency__fullname {
+    font-size: 7.8px;
+  }
+
+  .cryptocurrency__stats::before {
+    height: 0.7px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+
+  .cryptocurrency__price {
+    font-size: 17.4px;
+  }
+
+  .cryptocurrency__price__change {
+    margin-top: 7px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cryptocurrencies__line-break {
+    display: none;
+  }
+
+  .cryptocurrencies {
+    row-gap: 33px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  .cryptocurrency__card {
+    padding: 15px;
+    width: 236px;
+    height: 144px;
+  }
+
+  .cryptocurrency__img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .cryptocurrency__stats::before {
+    height: 1px;
+    margin-top: 17px;
+    margin-bottom: 14px;
+  }
+
+  .cryptocurrency__price__change {
+    margin-top: 8px;
+  }
+}

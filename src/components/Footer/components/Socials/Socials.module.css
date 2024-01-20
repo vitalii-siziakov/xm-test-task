@@ -1,0 +1,19 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.socials__list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.socials__title {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.143px;
+}
