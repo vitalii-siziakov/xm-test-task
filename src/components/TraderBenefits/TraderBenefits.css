@@ -1,0 +1,34 @@
+.trader-benefits__introduction {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.trader-benefits__title {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 42.6px;
+}
+
+.trader-benefits__title::after {
+  content: '';
+  display: block;
+  background-color: var(--color_04);
+
+  width: 70px;
+  height: 2px;
+  margin: 25px auto;
+}
+
+.trader-benefits__description {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  width: 641px;
+}
