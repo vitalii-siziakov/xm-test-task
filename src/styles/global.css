@@ -47,6 +47,10 @@ body {
   background-color: var(--color_18);
 }
 
+main {
+  position: relative;
+}
+
 ul {
   list-style-type: none;
 }
@@ -103,6 +107,11 @@ input {
 
 address {
   font-style: unset;
+}
+
+p {
+  margin-block-start: unset;
+  margin-block-end: unset;
 }
 
 .visually-hidden {

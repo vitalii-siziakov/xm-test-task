@@ -101,6 +101,8 @@
 
 .trader-benefits__item--vertical-img {
   margin: 0;
+  margin-left: -10px;
+  margin-bottom: -5px;
   margin-top: auto;
   max-width: 212px;
   height: 212px;
