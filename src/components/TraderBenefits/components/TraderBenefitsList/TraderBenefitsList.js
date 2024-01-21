@@ -3,8 +3,8 @@ import TraderBenefitsItem from '../TraderBenefitsItem/TraderBenefitsItem';
 const TraderBenefitsList = ({ list }) => {
   return (
     <ul className='trader-benefits__list'>
-      {list.map((item) => (
-        <TraderBenefitsItem item={item} key={item.title} />
+      {list.map((item, index) => (
+        <TraderBenefitsItem item={item} index={index} key={item.title} />
       ))}
     </ul>
   );
