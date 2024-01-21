@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { MainContext } from '../../contexts/MainContext';
 import Introduction from './components/Introduction/Introduction';
 import FeaturesList from './components/FeaturesList/FeaturesList';
+import FeaturesSeparator from './components/FeaturesSeparator/FeaturesSeparator';
 
 const BrokerFeatures = () => {
   const { brokerFeaturesList } = useContext(MainContext);

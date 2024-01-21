@@ -1,3 +1,65 @@
+.broker-features__container {
+  position: relative;
+  display: grid;
+}
+
+.broker-features__separator {
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+}
+
+.broker-features__separator__inner {
+  position: relative;
+  display: grid;
+}
+
+.broker-features__separator--horizontal {
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  width: 508px;
+  height: 0.56px;
+  background-color: var(--color_22);
+}
+
+.broker-features__separator--additional--horizontal {
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  width: 22.6px;
+  height: 0.56px;
+  background-color: var(--color_16);
+}
+
+.broker-features__separator--vertical {
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  width: 0.56px;
+  height: 235px;
+  background-color: var(--color_22);
+}
+
+.broker-features__separator--additional--vertical {
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  width: 0.56px;
+  height: 22.6px;
+  background-color: var(--color_16);
+}
+
+.broker-features__separator--point {
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  width: 2.26px;
+  height: 2.26px;
+  background-color: var(--color_05);
+  border-radius: 50%;
+}
+
 .broker-features {
   color: var(--color_14);
   background-color: var(--color_02);
@@ -80,6 +142,14 @@
 }
 
 @media screen and (max-width: 1080px) {
+  .broker-features__separator--horizontal {
+    width: 479px;
+  }
+
+  .broker-features__separator--vertical {
+    height: 221px;
+  }
+
   .broker-features__inner {
     display: unset;
     padding: unset;
@@ -145,6 +215,10 @@
 }
 
 @media screen and (max-width: 740px) {
+  .broker-features__separator {
+    display: none;
+  }
+
   .broker-features__introduction {
     padding-top: 60px;
   }
