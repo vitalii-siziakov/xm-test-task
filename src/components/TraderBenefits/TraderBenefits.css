@@ -6,7 +6,7 @@
 .trader-benefits__title {
   text-align: center;
   font-family: Roboto;
-  font-size: 32px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 300;
   line-height: 42.6px;
@@ -34,7 +34,7 @@
 }
 
 .trader-benefits__list {
-  margin-top: 30px;
+  margin-top: 28px;
 
   display: grid;
   grid-template-columns: 320px 328px 328px;
@@ -50,11 +50,8 @@
   border-radius: 10px;
   background-color: var(--color_12);
 
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 52px;
-  padding-right: 30px;
-  min-height: 285px;
+  padding: 25px 30px 30px 52px;
+  min-height: 265px;
 }
 
 .trader-benefits__item-img {
@@ -88,10 +85,14 @@
   max-width: 405px;
 
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+.trader-benefits__item:last-child .trader-benefits__item-description {
+  margin-top: 10px;
 }
 
 .trader-benefits__item--vertical {

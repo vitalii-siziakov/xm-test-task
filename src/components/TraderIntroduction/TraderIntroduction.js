@@ -16,7 +16,7 @@ const TraderIntroduction = () => {
       </p>
 
       <a href='/#' className='trader-introduction__open-account-link'>
-        Open an Account
+        Open Account
       </a>
 
       <p className='trader-introduction__demo'>

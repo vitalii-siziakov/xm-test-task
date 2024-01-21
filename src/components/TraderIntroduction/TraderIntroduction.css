@@ -1,6 +1,6 @@
 .trader-introduction {
-  display: grid;
-  row-gap: 30px;
+  /* display: grid;
+  row-gap: 30px; */
   text-align: center;
   padding-top: 120px;
   padding-bottom: 163px;
@@ -23,19 +23,22 @@
   font-style: normal;
   font-weight: 400;
   line-height: 42px;
+  /* margin-top: 30px; */
 }
 
 .trader-introduction__title-description {
   margin-top: -5px;
 }
 
-.trader-introduction__title-description + .trader-introduction__title-description {
-  margin-top: -30px;
+.trader-introduction__title-description {
+  margin-top: 15px;
 }
-
+.trader-introduction__title-description + .trader-introduction__title-description {
+  margin-top: 0px;
+}
 .trader-introduction__description {
   max-width: 463px;
-  margin: 0 auto;
+  margin: 20px auto 0;
 
   font-family: Roboto;
   font-size: 16px;
@@ -45,8 +48,9 @@
 }
 
 .trader-introduction__open-account-link {
+  display: block;
   width: 345px;
-  margin: 0 auto;
+  margin: 25px auto 0;
 
   padding-top: 6px;
   padding-bottom: 6px;
@@ -66,6 +70,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
+  margin-top: 32px;
 }
 
 .trader-introduction__demo-account-link {
@@ -73,7 +78,7 @@
 }
 
 .trader-introduction__terms {
-  margin-top: -15px;
+  margin-top: 15px;
 
   font-family: Roboto;
   font-size: 12px;
