@@ -26,6 +26,8 @@ import percentIcon from '@images/png/percent-icon.png';
 import microchipIcon from '@images/png/microchip-icon.png';
 import dollarIcon from '@images/png/dollar-icon.png';
 
+import plugImage from '@images/svg/grey-square.svg';
+
 export const MainContext = createContext(null);
 
 export const MainContextProvider = ({ children }) => {
@@ -54,27 +56,6 @@ export const MainContextProvider = ({ children }) => {
       image: supportIcon,
       alt: '24/7 Support time message',
     },
-  ];
-
-  const partnersList = [
-    { name: 'MetaQuotes', image: metaquotesLogo, alt: 'MetaQuotes Logo' },
-    { name: 'Versign', image: versignLogo, alt: 'Versign Logo' },
-    { name: 'UNICEF', image: unicefLogo, alt: 'UNICEF Logo' },
-    { name: 'Investors in People', image: investorsInPeopleLogo, alt: 'Investors in People Logo' },
-  ];
-
-  const socialsList = [
-    { name: 'Facebook', link: '/#', image: facebookIcon, alt: 'Facebook Icon' },
-    { name: 'Twitter', link: '/#', image: twitterIcon, alt: 'Twitter Icon' },
-    { name: 'YouTube', link: '/#', image: youtubeIcon, alt: 'YouTube Icon' },
-    { name: 'Instagram', link: '/#', image: instagramIcon, alt: 'Instagram Icon' },
-    { name: 'LinkedIn', link: '/#', image: linkedinIcon, alt: 'LinkedIn Icon' },
-  ];
-
-  const footerNavigationList = [
-    { name: 'Privacy Policy', link: '/#' },
-    { name: 'Cookie Policy', link: '/#' },
-    { name: 'Terms and Conditions', link: '/#' },
   ];
 
   const [cryptocurrenciesList, setCryptocurrenciesList] = useState([
@@ -140,6 +121,36 @@ export const MainContextProvider = ({ children }) => {
     },
   ];
 
+  const eventGallerySlidesList = [
+    { image: plugImage, alt: 'Grey square' },
+    { image: plugImage, alt: 'Grey square' },
+    { image: plugImage, alt: 'Grey square' },
+    { image: plugImage, alt: 'Grey square' },
+    { image: plugImage, alt: 'Grey square' },
+    { image: plugImage, alt: 'Grey square' },
+  ];
+
+  const partnersList = [
+    { name: 'MetaQuotes', image: metaquotesLogo, alt: 'MetaQuotes Logo' },
+    { name: 'Versign', image: versignLogo, alt: 'Versign Logo' },
+    { name: 'UNICEF', image: unicefLogo, alt: 'UNICEF Logo' },
+    { name: 'Investors in People', image: investorsInPeopleLogo, alt: 'Investors in People Logo' },
+  ];
+
+  const socialsList = [
+    { name: 'Facebook', link: '/#', image: facebookIcon, alt: 'Facebook Icon' },
+    { name: 'Twitter', link: '/#', image: twitterIcon, alt: 'Twitter Icon' },
+    { name: 'YouTube', link: '/#', image: youtubeIcon, alt: 'YouTube Icon' },
+    { name: 'Instagram', link: '/#', image: instagramIcon, alt: 'Instagram Icon' },
+    { name: 'LinkedIn', link: '/#', image: linkedinIcon, alt: 'LinkedIn Icon' },
+  ];
+
+  const footerNavigationList = [
+    { name: 'Privacy Policy', link: '/#' },
+    { name: 'Cookie Policy', link: '/#' },
+    { name: 'Terms and Conditions', link: '/#' },
+  ];
+
   return (
     <MainContext.Provider
       value={{
@@ -147,6 +158,7 @@ export const MainContextProvider = ({ children }) => {
         cryptocurrenciesList,
         setCryptocurrenciesList,
         brokerFeaturesList,
+        eventGallerySlidesList,
         partnersList,
         socialsList,
         footerNavigationList,
