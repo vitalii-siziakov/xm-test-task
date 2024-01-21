@@ -1,3 +1,8 @@
+.event__registration {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 .event-registration__introduction {
   display: grid;
   justify-content: center;
@@ -256,6 +261,11 @@
 }
 
 @media screen and (max-width: 1080px) {
+  .event__registration {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
   .event-registration-step__progress[value] {
     height: 5px;
   }

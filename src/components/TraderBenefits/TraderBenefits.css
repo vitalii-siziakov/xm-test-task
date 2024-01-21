@@ -30,5 +30,133 @@
   font-weight: 400;
   line-height: 22px;
 
-  width: 641px;
+  max-width: 641px;
+}
+
+.trader-benefits__list {
+  display: grid;
+  justify-content: center;
+}
+
+.trader-benefits__item {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  box-sizing: border-box;
+}
+
+.trader-benefits__item-title {
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.trader-benefits__item-title::after {
+  content: '';
+  display: block;
+  background-color: var(--color_04);
+
+  width: 50px;
+  height: 2px;
+  margin: 25px 0;
+}
+
+.trader-benefits__item-description {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  .trader-benefits__title {
+    font-size: 32px;
+  }
+
+  .trader-benefits__list {
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    row-gap: 25px;
+  }
+
+  .trader-benefits__item {
+    grid-template-columns: auto 90px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
+
+    max-width: 530px;
+    width: 530px;
+    min-height: 230px;
+    border-radius: 10px;
+
+    background-color: var(--color_12);
+  }
+
+  .trader-benefits__item-img {
+    margin: 0 auto;
+    max-width: 90px;
+    height: 90px;
+  }
+
+  .trader-benefits__item-title {
+    margin-top: 10px;
+    max-width: 175px;
+  }
+
+  .trader-benefits__item-description {
+    max-width: 305px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trader-benefits__introduction {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .trader-benefits__item {
+    grid-template-columns: auto 60px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+
+    width: auto;
+    min-height: 235px;
+  }
+
+  .trader-benefits__item-img {
+    margin: 0 auto;
+    max-width: 60px;
+    height: 60px;
+  }
+
+  .trader-benefits__item-title {
+    margin-top: 23px;
+
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  .trader-benefits__item-description {
+    max-width: 305px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .trader-benefits__title {
+    max-width: 160px;
+    margin: 0 auto;
+  }
 }
