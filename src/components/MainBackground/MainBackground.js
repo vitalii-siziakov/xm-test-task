@@ -7,6 +7,8 @@ import roseZeroNumber from '@images/svg/rose-zero-number.svg';
 import purpleCube from '@images/svg/purple-cube.svg';
 import violetZeroNumber from '@images/svg/violet-zero-number.svg';
 import greenVector from '@images/svg/green-vector.svg';
+import purpleBlur from '@images/svg/purple-blur.svg';
+import greenBlur from '@images/svg/green-blur.svg';
 
 const MainBackground = () => {
   return (
@@ -19,6 +21,9 @@ const MainBackground = () => {
       <img className='main-background__purple-cube' src={purpleCube} alt='Purple cube' />
       <img className='main-background__violet-zero-number' src={violetZeroNumber} alt='Violet zero number' />
       <img className='main-background__green-vector' src={greenVector} alt='Green vector' />
+      <img className='main-background__purple-blur' src={purpleBlur} alt='Purple blur' />
+      <img className='main-background__green-blur' src={greenBlur} alt='Green blur' />
+      <div className='main-background__gradient'></div>
     </div>
   );
 };

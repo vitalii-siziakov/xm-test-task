@@ -3,8 +3,9 @@
   min-width: 100%;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: -1;
+  overflow-x: hidden;
 }
 
 .main-background__green-zero-number {
@@ -69,4 +70,149 @@
   left: 48px;
   width: 1067px;
   z-index: -1;
+}
+
+.main-background__purple-blur {
+  position: absolute;
+  top: -250px;
+  left: -325px;
+  width: 650px;
+  height: fit-content;
+  z-index: -2;
+}
+
+.main-background__green-blur {
+  position: absolute;
+  width: 632px;
+  right: -300px;
+  top: 180px;
+  z-index: -2;
+}
+
+.main-background__gradient {
+  position: absolute;
+  top: 0;
+  /* bottom: 0; */
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 617px;
+  background: var(--gradient_02);
+
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 768px) {
+  .main-background__green-zero-number {
+    width: 160px;
+    left: 5px;
+  }
+
+  .main-background__violet-cube {
+    width: 200px;
+    top: 150px;
+  }
+
+  .main-background__blue-cup {
+    width: 50px;
+    right: 50px;
+    top: 20px;
+  }
+
+  .main-background__rose-zero-number {
+    width: 250px;
+    top: 100px;
+    right: -110px;
+  }
+
+  .main-background__perforated-ring {
+    left: 60px;
+    top: 360px;
+    width: 70px;
+  }
+
+  .main-background__purple-cube {
+    width: 150px;
+    right: 30px;
+    top: 375px;
+  }
+
+  .main-background__violet-zero-number {
+    width: 580px;
+    left: -280px;
+    top: 800px;
+  }
+
+  .main-background__green-vector {
+    left: -800px;
+    top: 200px;
+    z-index: -2;
+    width: 1767px;
+  }
+
+  .main-background__green-blur {
+    top: -100px;
+  }
+
+  .main-background__purple-blur {
+    left: -450px;
+  }
+
+  .main-background__gradient {
+    height: 460px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-background__blue-cup,
+  .main-background__violet-cube,
+  .main-background__perforated-ring {
+    display: none;
+  }
+
+  .main-background__green-zero-number {
+    width: 130px;
+    left: -5px;
+  }
+
+  .main-background__purple-cube {
+    width: 110px;
+    right: -40px;
+    top: 20px;
+  }
+
+  .main-background__rose-zero-number {
+    width: 150px;
+    top: 600px;
+    right: -70px;
+  }
+
+  .main-background__violet-zero-number {
+    width: 450px;
+    left: -220px;
+    top: 1480px;
+  }
+
+  .main-background__green-vector {
+    left: 100px;
+    top: 250px;
+    z-index: -2;
+    width: 700px;
+  }
+
+  .main-background__green-blur {
+    top: 0px;
+    left: auto;
+    right: -400px;
+  }
+
+  .main-background__gradient {
+    height: 500px;
+  }
+}
+
+@media (max-width: 330px) {
+  .main-background__gradient {
+    height: 610px;
+  }
 }
