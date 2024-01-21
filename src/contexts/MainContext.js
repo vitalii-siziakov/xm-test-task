@@ -1,4 +1,6 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from 'react';
+import { getCryptocurrenciesList } from './../API/connectors/getCryptocurrencies';
+
 import bitcoinIcon from '@images/png/btc-icon.png';
 import etheriumIcon from '@images/png/eth-icon.png';
 import rippleIcon from '@images/png/xrp-icon.png';
@@ -58,25 +60,70 @@ export const MainContextProvider = ({ children }) => {
     },
   ];
 
+  const cryptocurrenciesPresets = {
+    90: {
+      icon: bitcoinIcon,
+    },
+    80: {
+      icon: etheriumIcon,
+    },
+    58: {
+      icon: rippleIcon,
+    },
+    1: {
+      icon: litecoinIcon,
+    },
+    2321: {
+      icon: bitcoinCashIcon,
+    },
+  };
+
   const [cryptocurrenciesList, setCryptocurrenciesList] = useState([
     {
-      icon: bitcoinIcon,
-      abbreviation: 'BTC',
-      fullname: 'Bitcoin',
-      priceUSD: '$87,193.00',
-      priceChangePercent24H: '12.95%',
+      id: '90',
+      symbol: 'BTC',
+      name: 'Bitcoin',
+      price_usd: '41727.51',
+      percent_change_24h: '0.21',
     },
-    { icon: etheriumIcon, abbreviation: 'ETH', fullname: 'Etherium', priceUSD: '$1,276.00', priceChangePercent24H: '4.87%' },
-    { icon: rippleIcon, abbreviation: 'XRP', fullname: 'Ripple', priceUSD: '$0,6058.00', priceChangePercent24H: '4.59%' },
-    { icon: litecoinIcon, abbreviation: 'LTC', fullname: 'Litecoin', priceUSD: '$107,83.00', priceChangePercent24H: '8.23%' },
     {
-      icon: bitcoinCashIcon,
-      abbreviation: 'BCH',
-      fullname: 'Bitcoin Cash',
-      priceUSD: '$1,276.00',
-      priceChangePercent24H: '5.87%',
+      id: '80',
+      symbol: 'ETH',
+      name: 'Ethereum',
+      price_usd: '2474.00',
+      percent_change_24h: '0.51',
+    },
+    {
+      id: '58',
+      symbol: 'XRP',
+      name: 'XRP',
+      price_usd: '0.551029',
+      percent_change_24h: '0.81',
+    },
+    {
+      id: '1',
+      symbol: 'LTC',
+      name: 'Litecoin',
+      price_usd: '70.76',
+      percent_change_24h: '0.12',
+    },
+    {
+      id: '2321',
+      symbol: 'BCH',
+      name: 'Bitcoin Cash',
+      price_usd: '240.36',
+      percent_change_24h: '0.80',
     },
   ]);
+
+  useEffect(() => {
+    (async () => {
+      const cryptocurrenciesIds = '90,80,58,1,2321';
+      const cryptocurrenciesList = await getCryptocurrenciesList(cryptocurrenciesIds);
+      console.log(cryptocurrenciesList);
+      setCryptocurrenciesList(cryptocurrenciesList);
+    })();
+  }, []);
 
   const traderBenefitsList = [
     {
@@ -122,12 +169,12 @@ export const MainContextProvider = ({ children }) => {
   ];
 
   const eventGallerySlidesList = [
-    { image: plugImage, alt: 'Grey square' },
-    { image: plugImage, alt: 'Grey square' },
-    { image: plugImage, alt: 'Grey square' },
-    { image: plugImage, alt: 'Grey square' },
-    { image: plugImage, alt: 'Grey square' },
-    { image: plugImage, alt: 'Grey square' },
+    { image: plugImage, alt: 'Grey square', id: 'Image 01' },
+    { image: plugImage, alt: 'Grey square', id: 'Image 02' },
+    { image: plugImage, alt: 'Grey square', id: 'Image 03' },
+    { image: plugImage, alt: 'Grey square', id: 'Image 04' },
+    { image: plugImage, alt: 'Grey square', id: 'Image 05' },
+    { image: plugImage, alt: 'Grey square', id: 'Image 06' },
   ];
 
   const partnersList = [
@@ -155,8 +202,8 @@ export const MainContextProvider = ({ children }) => {
     <MainContext.Provider
       value={{
         traderBenefitsList,
+        cryptocurrenciesPresets,
         cryptocurrenciesList,
-        setCryptocurrenciesList,
         brokerFeaturesList,
         eventGallerySlidesList,
         partnersList,

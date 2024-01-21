@@ -8,9 +8,8 @@ const Cryptocurrencies = () => {
 
   return (
     <section className='cryptocurrencies'>
-      {cryptocurrenciesList.map((item, index) => (
-        <CryptocurrencyCard item={item} index={index} key={item.abbreviation} />
-      ))}
+      {Boolean(cryptocurrenciesList?.length) &&
+        cryptocurrenciesList.map((item, index) => <CryptocurrencyCard item={item} index={index} key={item.id} />)}
     </section>
   );
 };

@@ -18,8 +18,8 @@ const EventGalleryCarousel = ({ slides }) => {
       <div className='event-gallery-carousel'>
         <div className='event-gallery-carousel__viewport' ref={emblaRef}>
           <div className='event-gallery-carousel__container'>
-            {slides.map((slide, index) => (
-              <CarouselSlide slide={slide} key={index} />
+            {slides.map((slide) => (
+              <CarouselSlide slide={slide} key={slide.id} />
             ))}
           </div>
         </div>
