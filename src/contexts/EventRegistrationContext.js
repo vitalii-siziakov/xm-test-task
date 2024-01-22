@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
+import dayjs from 'dayjs';
 
 export const EventRegistrationContext = createContext(null);
 
@@ -21,13 +22,9 @@ export const EventRegistrationContextProvider = ({ children }) => {
   const [isPasswordValid, setIsPasswordValid] = useState('');
 
   const showInConsoleEventRegistrationData = () => {
-    const yyyy = dateOfBirth.getFullYear();
-    let mm = dateOfBirth.getMonth() + 1;
-    let dd = dateOfBirth.getDate();
-
     const registrationData = {
       fullName,
-      dateOfBirth: `${dd}/${mm}/${yyyy}`,
+      dateOfBirth: dayjs(dateOfBirth).format('DD/MM/YY'),
       email,
       password,
     };

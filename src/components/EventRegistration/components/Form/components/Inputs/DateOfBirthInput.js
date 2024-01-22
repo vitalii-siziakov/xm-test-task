@@ -31,7 +31,8 @@ const DateOfBirthInput = () => {
         toggleCalendarOnIconClick
         selected={dateOfBirth}
         onChange={dateOfBirthChange}
-        placeholderText='dd/mm/yyyy'
+        placeholderText='dd/mm/yy'
+        dateFormat='dd/MM/yy'
         className={`event-registration-form__input event-registration-form__input-date ${inputModifierClass}`}
         id='date-of-birth'
         peekNextMonth
