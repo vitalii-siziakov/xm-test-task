@@ -1,0 +1,105 @@
+.event-gallery-carousel__wrapper {
+  display: grid;
+  margin-top: 47px;
+  grid-template-columns: 115px calc(100% - 115px - 115px) 115px;
+}
+
+.event-gallery-carousel {
+  --slide-spacing: 30px;
+  --slide-size: 170px;
+  --slide-height: 170px;
+  --slide-img-border: 3px;
+}
+
+.event-gallery-carousel__viewport {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.event-gallery-carousel__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.event-gallery-carousel__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  position: relative;
+}
+
+.event-gallery-carousel__slide-img {
+  display: block;
+  height: var(--slide-height);
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+
+  border: var(--slide-img-border) solid var(--color_02);
+}
+
+.event-gallery-carousel__button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-gallery-carousel__button-wrapper--prev {
+  justify-self: baseline;
+  margin-left: 30px;
+}
+
+.event-gallery-carousel__button-wrapper--next {
+  justify-self: end;
+  margin-right: 30px;
+}
+
+.event-gallery-carousel__button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.event-gallery-carousel__button:disabled {
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 1190px) {
+  .event-gallery-carousel__wrapper {
+    grid-template-columns: 79px calc(100% - 79px - 79px) 79px;
+  }
+
+  .event-gallery-carousel {
+    --slide-spacing: 30px;
+    --slide-size: 130px;
+    --slide-height: 130px;
+    --slide-img-border: 2.3px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .event-gallery-carousel__wrapper {
+    grid-template-columns: 47px calc(100% - 47px - 47px) 47px;
+  }
+  .event-gallery-carousel {
+    --slide-spacing: 25px;
+    --slide-size: 100px;
+    --slide-height: 100px;
+    --slide-img-border: 1.8px;
+  }
+
+  .event-gallery-carousel__button-wrapper--prev,
+  .event-gallery-carousel__button-wrapper--next {
+    justify-self: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
+}

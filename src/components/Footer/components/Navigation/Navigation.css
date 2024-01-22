@@ -1,0 +1,28 @@
+.footer__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.footer__navigation-list {
+  display: flex;
+  gap: 14px;
+}
+
+.footer__navigation-item {
+  position: relative;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17.143px;
+}
+
+.footer__navigation-item + .footer__navigation-item::after {
+  position: absolute;
+  left: -8px;
+  content: '|';
+}
+
+.footer__navigation-link:hover {
+  color: var(--color_05);
+}

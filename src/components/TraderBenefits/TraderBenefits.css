@@ -1,0 +1,236 @@
+.trader-benefits__introduction {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.trader-benefits__title {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 42.6px;
+}
+
+.trader-benefits__title::after {
+  content: '';
+  display: block;
+  background-color: var(--color_04);
+
+  width: 70px;
+  height: 2px;
+  margin: 25px auto;
+}
+
+.trader-benefits__description {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  max-width: 641px;
+}
+
+.trader-benefits__list {
+  margin-top: 28px;
+
+  display: grid;
+  grid-template-columns: 320px 328px 328px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.trader-benefits__item {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: var(--color_12);
+
+  padding: 25px 30px 30px 52px;
+  min-height: 265px;
+}
+
+.trader-benefits__item-img {
+  margin: 0 auto;
+  max-width: 75px;
+  height: 75px;
+}
+
+.trader-benefits__item-title {
+  margin-top: 30px;
+  max-width: 190px;
+
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.trader-benefits__item-title::after {
+  content: '';
+  display: block;
+  background-color: var(--color_04);
+
+  width: 50px;
+  height: 2px;
+  margin: 25px 0;
+}
+
+.trader-benefits__item-description {
+  max-width: 405px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.trader-benefits__item:last-child .trader-benefits__item-description {
+  margin-top: 10px;
+}
+
+.trader-benefits__item--vertical {
+  grid-template-columns: auto;
+  grid-row: 1/3;
+}
+
+.trader-benefits__item--vertical-img {
+  margin: 0;
+  margin-left: -10px;
+  margin-bottom: -5px;
+  margin-top: auto;
+  max-width: 212px;
+  height: 212px;
+}
+
+.trader-benefits__item--horizontal {
+  grid-column: 2/4;
+}
+
+.trader-benefits__item--horizontal-img {
+  max-width: 90px;
+  height: 90px;
+}
+
+@media screen and (max-width: 1080px) {
+  .trader-benefits__title {
+    font-size: 32px;
+  }
+
+  .trader-benefits__list {
+    grid-template-columns: auto;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    row-gap: 25px;
+  }
+
+  .trader-benefits__item--vertical,
+  .trader-benefits__item--horizontal {
+    grid-template-columns: unset;
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .trader-benefits__item--vertical-img,
+  .trader-benefits__item--horizontal-img {
+    margin: unset;
+    max-width: unset;
+    height: unset;
+  }
+
+  .trader-benefits__item {
+    grid-template-columns: auto 90px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
+
+    max-width: 530px;
+    width: 530px;
+    min-height: 230px;
+  }
+
+  .trader-benefits__item-img {
+    margin: 0 auto;
+    max-width: 90px;
+    height: 90px;
+  }
+
+  .trader-benefits__item-title {
+    margin-top: 10px;
+    max-width: 175px;
+  }
+
+  .trader-benefits__item-description {
+    max-width: 305px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trader-benefits__title::after {
+    margin: 20px auto 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trader-benefits__introduction {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .trader-benefits__item {
+    grid-template-columns: auto 60px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+
+    width: auto;
+    min-height: 235px;
+  }
+
+  .trader-benefits__item-img {
+    margin: 0 auto;
+    max-width: 60px;
+    height: 60px;
+  }
+
+  .trader-benefits__item-title {
+    margin-top: 23px;
+
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  .trader-benefits__item-description {
+    max-width: 305px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .trader-benefits__title {
+    max-width: 160px;
+    margin: 55px auto 0;
+  }
+
+  .trader-benefits__title::after {
+    margin: 16px auto 20px;
+  }
+
+  .trader-benefits__description {
+    margin-top: 22px;
+    line-height: 20px;
+  }
+}
