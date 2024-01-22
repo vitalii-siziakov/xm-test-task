@@ -291,6 +291,10 @@
   text-transform: uppercase;
 }
 
+.event-registration-form__submit-button:hover {
+  background-color: var(--color_28);
+}
+
 .event-registration-form__submit-button:disabled {
   background-color: var(--color_20);
 }
@@ -311,6 +315,11 @@
 .event-registration-note__link {
   color: var(--color_05);
   text-decoration-line: underline;
+  transition: all 0.2s ease-in-out;
+}
+
+.event-registration-note__link:hover {
+  color: var(--color_02);
 }
 
 .event-registration__terms {
@@ -334,6 +343,9 @@
 
 .event-registration__terms-link {
   color: var(--color_05);
+}
+.event-registration__terms-link:hover {
+  border-bottom: 1px solid var(--color_05);
 }
 
 .event-registration__success-message__container {
@@ -460,6 +472,14 @@
     grid-template-columns: 200px 180px 235px;
     margin-top: 37px;
   }
+
+  .event-registration__slogan {
+    margin-top: 30px;
+  }
+
+  .event-registration-steps {
+    margin-top: 82px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -508,6 +528,14 @@
     grid-template-columns: minmax(0, 454px);
     margin-bottom: 27px;
     row-gap: 15px;
+  }
+
+  .event-registration-step {
+    display: none;
+  }
+
+  .event-registration-step--active {
+    display: grid;
   }
 
   .event-registration-form {

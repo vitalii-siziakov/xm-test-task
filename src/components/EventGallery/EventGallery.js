@@ -8,8 +8,10 @@ const EventGallery = () => {
 
   return (
     <section className='event__gallery'>
-      <h2 className='event__gallery__title'>Event Gallery</h2>
-      <EventGalleryCarousel slides={eventGallerySlidesList} />
+      <div className='container'>
+        <h2 className='event__gallery__title'>Event Gallery</h2>
+        <EventGalleryCarousel slides={eventGallerySlidesList} />
+      </div>
     </section>
   );
 };

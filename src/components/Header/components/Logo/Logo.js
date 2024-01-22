@@ -1,9 +1,9 @@
 import logo from '@images/svg/xm-logo.svg'
 
-const Logo = ({ styles }) => {
+const Logo = () => {
   return (
-    <a href='/#' className={styles['header__logo']}>
-      <img className={styles['header__logo-img']} src={logo} alt='XM Logo' />
+    <a href='/#' className='header__logo'>
+      <img className='header__logo-img' src={logo} alt='XM Logo' />
     </a>
   )
 }

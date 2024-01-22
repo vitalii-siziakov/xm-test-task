@@ -1,4 +1,4 @@
-import styles from './BrokerFeatures.module.css';
+import './BrokerFeatures.css';
 import { useContext } from 'react';
 import { MainContext } from '../../contexts/MainContext';
 import Introduction from './components/Introduction/Introduction';
@@ -8,10 +8,12 @@ const BrokerFeatures = () => {
   const { brokerFeaturesList } = useContext(MainContext);
 
   return (
-    <section className={styles['broker-features']}>
-      <div className={styles['broker-features__inner']}>
-        <Introduction styles={styles} />
-        <FeaturesList styles={styles} list={brokerFeaturesList} />
+    <section className='broker-features'>
+      <div className='container'>
+        <div className='broker-features__inner'>
+          <Introduction />
+          <FeaturesList list={brokerFeaturesList} />
+        </div>
       </div>
     </section>
   );

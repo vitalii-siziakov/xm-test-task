@@ -36,6 +36,7 @@
   --color_25: #f3fef4;
   --color_26: #3c763d;
   --color_27: #31b63b;
+  --color_28: #258838;
   --gradient_01: linear-gradient(
     180deg,
     rgba(32, 46, 71, 0.65) 36.53%,
@@ -53,11 +54,18 @@
 }
 
 body {
-  max-width: 1200px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   color: var(--color_02);
   background-color: var(--color_18);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 main {
@@ -128,5 +136,5 @@ p {
 }
 
 .visually-hidden {
-  display: none !important;
+  display: none;
 }

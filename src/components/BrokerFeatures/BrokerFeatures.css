@@ -165,7 +165,7 @@
   .broker-features__slogan::before {
     width: 40px;
     height: 4px;
-    margin: 0 auto 25px auto;
+    margin: 0 auto 25px;
   }
 
   .broker-features__slogan {
@@ -214,13 +214,25 @@
   }
 }
 
+@media (max-width: 768px) {
+  .broker-features__introduction {
+    padding-top: 52px;
+  }
+
+  .broker-features__slogan::before {
+    width: 40px;
+    height: 4px;
+    margin: 0 auto 20px;
+  }
+
+  .broker-features__description {
+    padding-top: 15px;
+  }
+}
+
 @media screen and (max-width: 740px) {
   .broker-features__separator {
     display: none;
-  }
-
-  .broker-features__introduction {
-    padding-top: 60px;
   }
 
   .broker-features__slogan {

@@ -15,6 +15,7 @@ function App() {
       <MainCombinedContextProvider>
         <Header />
         <main className='main'>
+          <h1 className='visually-hidden'>Cryptocurrencies Trading by XM</h1>
           <MainBackground />
           <TraderIntroduction />
           <Cryptocurrencies />

@@ -43,11 +43,11 @@ const Steps = () => {
 
   return (
     <div className='event-registration-steps'>
-      <div className='event-registration-step'>
+      <div className={`event-registration-step ${currentRegistrationStep === 1 && 'event-registration-step--active'}`}>
         <span
-          className={`event-registration-step__number ${
-            currentRegistrationStep >= 1 && 'event-registration-step__number--active'
-          }`}
+          className={`event-registration-step__number 
+          ${currentRegistrationStep >= 1 && 'event-registration-step__number--active'}
+        `}
         >
           1
         </span>
@@ -59,11 +59,11 @@ const Steps = () => {
         />
       </div>
 
-      <div className='event-registration-step'>
+      <div className={`event-registration-step ${currentRegistrationStep === 2 && 'event-registration-step--active'}`}>
         <span
-          className={`event-registration-step__number ${
-            currentRegistrationStep >= 2 && 'event-registration-step__number--active'
-          }`}
+          className={`event-registration-step__number
+          ${currentRegistrationStep >= 2 && 'event-registration-step__number--active'}
+        `}
         >
           2
         </span>

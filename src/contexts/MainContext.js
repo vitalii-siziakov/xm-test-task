@@ -148,11 +148,11 @@ export const MainContextProvider = ({ children }) => {
   ];
 
   const socialsList = [
-    { name: 'Facebook', link: '/#', image: facebookIcon, alt: 'Facebook Icon' },
-    { name: 'Twitter', link: '/#', image: twitterIcon, alt: 'Twitter Icon' },
-    { name: 'YouTube', link: '/#', image: youtubeIcon, alt: 'YouTube Icon' },
-    { name: 'Instagram', link: '/#', image: instagramIcon, alt: 'Instagram Icon' },
-    { name: 'LinkedIn', link: '/#', image: linkedinIcon, alt: 'LinkedIn Icon' },
+    { name: 'Facebook', link: 'https://www.facebook.com/xmglobal', image: facebookIcon, alt: 'Facebook Icon' },
+    { name: 'Twitter', link: 'https://twitter.com/XM_COM', image: twitterIcon, alt: 'Twitter Icon' },
+    { name: 'YouTube', link: 'https://www.youtube.com/user/xmglobal', image: youtubeIcon, alt: 'YouTube Icon' },
+    { name: 'Instagram', link: 'https://www.instagram.com/xmglobal/', image: instagramIcon, alt: 'Instagram Icon' },
+    { name: 'LinkedIn', link: 'https://cy.linkedin.com/company/xm-global', image: linkedinIcon, alt: 'LinkedIn Icon' },
   ];
 
   const footerNavigationList = [

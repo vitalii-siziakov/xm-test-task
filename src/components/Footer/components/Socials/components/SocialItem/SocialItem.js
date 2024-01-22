@@ -1,14 +1,14 @@
-const SocialItem = ({ styles, item }) => {
-  const { name, link, image, alt } = item
+const SocialItem = ({ item }) => {
+  const { name, link, image, alt } = item;
 
   return (
-    <li className={styles['socials__item']}>
-      <h3 className={`${styles['socials__name']} visually-hidden`}>{name}</h3>
-      <a href={link} target='_blank' rel='noopener noreferrer' className={styles['socials__link']}>
-        <img src={image} alt={alt} className={styles['socials__icon']} />
+    <li className='socials__item'>
+      <h3 className='socials__name visually-hidden'>{name}</h3>
+      <a href={link} target='_blank' rel='noopener noreferrer' className='socials__link'>
+        <img src={image} alt={alt} className='socials__icon' />
       </a>
     </li>
-  )
-}
+  );
+};
 
-export default SocialItem
+export default SocialItem;

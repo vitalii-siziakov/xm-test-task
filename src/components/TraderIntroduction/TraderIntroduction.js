@@ -3,7 +3,7 @@ import './TraderIntroduction.css';
 const TraderIntroduction = () => {
   return (
     <section className='trader-introduction'>
-      <h2 className='trader-introduction__title'>Trade with</h2>
+      <h2 className='trader-introduction__title'>Trade with <span className='visually-hidden'>XM</span></h2>
 
       <p className='trader-introduction__title-description'>
         <b>Zero Swaps</b> on All XM Ultra Low

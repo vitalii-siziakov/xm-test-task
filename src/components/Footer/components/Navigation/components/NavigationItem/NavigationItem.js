@@ -1,9 +1,9 @@
-const NavigationItem = ({ styles, item }) => {
+const NavigationItem = ({ item }) => {
   const { name, link } = item
 
   return (
-    <li className={styles['footer__navigation-item']}>
-      <a href={link} className={styles['footer__navigation-link']}>
+    <li className='footer__navigation-item'>
+      <a href={link} className='footer__navigation-link'>
         {name}
       </a>
     </li>

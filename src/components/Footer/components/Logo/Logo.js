@@ -1,11 +1,11 @@
-import tradingPointLogo from '@images/png/trading-point-logo.png'
+import tradingPointLogo from '@images/png/trading-point-logo.png';
 
-const Logo = ({ styles }) => {
+const Logo = () => {
   return (
-    <a href='/#' className={styles['footer__logo']}>
-      <img src={tradingPointLogo} alt='TradingPoint Logo' className={styles['footer__logo-img']} />
+    <a href='/#' className='footer__logo'>
+      <img src={tradingPointLogo} alt='TradingPoint Logo' className='footer__logo-img' />
     </a>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

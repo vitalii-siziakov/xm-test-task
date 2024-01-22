@@ -1,14 +1,18 @@
-import styles from './Header.module.css'
-import Logo from './components/Logo/Logo'
-import Navigation from './components/Navigation/Navigation'
+import './Header.css';
+import Logo from './components/Logo/Logo';
+import Navigation from './components/Navigation/Navigation';
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <Logo styles={styles} />
-      <Navigation styles={styles} />
+    <header className='header'>
+      <div className='container'>
+        <div className='header__inner'>
+          <Logo  />
+          <Navigation />
+        </div>
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

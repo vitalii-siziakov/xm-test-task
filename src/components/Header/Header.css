@@ -1,13 +1,15 @@
 .header {
+  height: 113px;
+  width: 100%;
+  background-color: var(--color_01);
+}
+
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  height: 113px;
-  padding-left: 29px;
   padding-right: 54px;
-
-  background-color: var(--color_01);
+  height: 113px;
 }
 
 .header__navigation-list {
@@ -23,12 +25,22 @@
   line-height: normal;
 }
 
+.header__navigation-link:hover {
+  color: var(--color_05);
+}
+
 @media screen and (max-width: 768px) {
   .header {
-    justify-content: center;
-
     height: 94px;
     padding: 0px;
+  }
+
+  .header__inner {
+    justify-content: center;
+    height: 94px;
+    padding: 0px;
+    margin: 0 auto;
+    width: fit-content;
   }
 
   .header__navigation {

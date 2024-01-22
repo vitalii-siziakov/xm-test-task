@@ -13,16 +13,18 @@ import greenBlur from '@images/svg/green-blur.svg';
 const MainBackground = () => {
   return (
     <div className='main-background'>
-      <img className='main-background__green-zero-number' src={greenZeroNumber} alt='Green zero number' />
-      <img className='main-background__violet-cube' src={violetCube} alt='Violet cube' />
-      <img className='main-background__blue-cup' src={blueCup} alt='Blue cup' />
-      <img className='main-background__perforated-ring' src={perforatedRing} alt='Perforated ring' />
-      <img className='main-background__rose-zero-number' src={roseZeroNumber} alt='Rose zero number' />
-      <img className='main-background__purple-cube' src={purpleCube} alt='Purple cube' />
-      <img className='main-background__violet-zero-number' src={violetZeroNumber} alt='Violet zero number' />
-      <img className='main-background__green-vector' src={greenVector} alt='Green vector' />
-      <img className='main-background__purple-blur' src={purpleBlur} alt='Purple blur' />
-      <img className='main-background__green-blur' src={greenBlur} alt='Green blur' />
+      <div className='main-background__container'>
+        <img className='main-background__green-zero-number' src={greenZeroNumber} alt='Green zero number' />
+        <img className='main-background__violet-cube' src={violetCube} alt='Violet cube' />
+        <img className='main-background__blue-cup' src={blueCup} alt='Blue cup' />
+        <img className='main-background__perforated-ring' src={perforatedRing} alt='Perforated ring' />
+        <img className='main-background__rose-zero-number' src={roseZeroNumber} alt='Rose zero number' />
+        <img className='main-background__purple-cube' src={purpleCube} alt='Purple cube' />
+        <img className='main-background__violet-zero-number' src={violetZeroNumber} alt='Violet zero number' />
+        <img className='main-background__green-vector' src={greenVector} alt='Green vector' />
+        <img className='main-background__purple-blur' src={purpleBlur} alt='Purple blur' />
+        <img className='main-background__green-blur' src={greenBlur} alt='Green blur' />
+      </div>
       <div className='main-background__gradient'></div>
     </div>
   );
