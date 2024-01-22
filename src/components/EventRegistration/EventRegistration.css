@@ -164,6 +164,7 @@
 
 .event-registration-form__item {
   display: grid;
+  align-self: baseline;
   row-gap: 5px;
 }
 
@@ -180,6 +181,8 @@
   padding-left: 8px;
 
   color: var(--color_01);
+  box-sizing: border-box;
+  border: 1px solid transparent;
 
   font-family: Roboto;
   font-size: 14px;
@@ -196,6 +199,55 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.event-registration-form__input:hover,
+.event-registration-form__input:focus {
+  outline: none;
+  border: 1px solid var(--color_24);
+}
+
+.event-registration-form__input-messages-list {
+  margin-top: 10px;
+  display: grid;
+  row-gap: 5px;
+}
+
+.event-registration-form__input-messages-item {
+  color: var(--color_23);
+
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.event-registration-form__input-messages-item::before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  box-sizing: border-box;
+  border: 3px solid var(--color_23);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.event-registration-form__input-messages-item--valid::before {
+  border-color: var(--color_04);
+}
+
+.event-registration-form__input-messages-item--invalid::before {
+  border-color: var(--color_05);
+}
+
+.event-registration-form__input-messages-item--valid {
+  color: var(--color_04);
+}
+
+.event-registration-form__input-messages-item--invalid {
+  color: var(--color_05);
 }
 
 .event-registration-form__submit-button {
@@ -255,6 +307,56 @@
 
 .event-registration__terms-link {
   color: var(--color_05);
+}
+
+.event-registration__success-message__container {
+  margin-left: 30px;
+  margin-right: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 827px);
+  grid-template-rows: min(211px);
+  justify-content: center;
+}
+
+.event-registration__success-message {
+  color: var(--color_26);
+  background-color: var(--color_25);
+
+  border: 1px solid var(--color_27);
+  box-sizing: border-box;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.event-registration__success-message__title__block {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+
+.event-registration__success-message__title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.event-registration__success-message__description__block {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.event-registration__success-message__description {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media screen and (max-width: 1080px) {
