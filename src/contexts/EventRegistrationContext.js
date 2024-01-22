@@ -23,9 +23,9 @@ export const EventRegistrationContextProvider = ({ children }) => {
 
   const showInConsoleEventRegistrationData = () => {
     const registrationData = {
-      fullName,
+      fullName: fullName.trim(),
       dateOfBirth: dayjs(dateOfBirth).format('DD/MM/YY'),
-      email,
+      email: email.trim(),
       password,
     };
     console.log(registrationData);
