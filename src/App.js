@@ -1,4 +1,4 @@
-import { MainContextProvider } from './contexts/MainContext';
+import { MainCombinedContextProvider } from './contexts/MainCombinedContextProvider';
 import Header from '@components/Header/Header';
 import MainBackground from './components/MainBackground/MainBackground';
 import TraderIntroduction from '@components/TraderIntroduction/TraderIntroduction';
@@ -12,7 +12,7 @@ import Footer from '@components/Footer/Footer';
 function App() {
   return (
     <div className='App'>
-      <MainContextProvider>
+      <MainCombinedContextProvider>
         <Header />
         <main className='main'>
           <MainBackground />
@@ -24,7 +24,7 @@ function App() {
           <BrokerFeatures />
         </main>
         <Footer />
-      </MainContextProvider>
+      </MainCombinedContextProvider>
     </div>
   );
 }

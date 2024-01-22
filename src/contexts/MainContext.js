@@ -198,10 +198,6 @@ export const MainContextProvider = ({ children }) => {
     { name: 'Terms and Conditions', link: '/#' },
   ];
 
-  const [registrationStep, setRegistrationStep] = useState(1);
-  const [firstRegistrationStepProgress, setFirstRegistrationStepProgress] = useState(0);
-  const [secondRegistrationStepProgress, setSecondRegistrationStepProgress] = useState(0);
-
   return (
     <MainContext.Provider
       value={{
@@ -209,12 +205,6 @@ export const MainContextProvider = ({ children }) => {
         cryptocurrenciesPresets,
         cryptocurrenciesList,
         brokerFeaturesList,
-        registrationStep,
-        setRegistrationStep,
-        firstRegistrationStepProgress,
-        setFirstRegistrationStepProgress,
-        secondRegistrationStepProgress,
-        setSecondRegistrationStepProgress,
         eventGallerySlidesList,
         partnersList,
         socialsList,
