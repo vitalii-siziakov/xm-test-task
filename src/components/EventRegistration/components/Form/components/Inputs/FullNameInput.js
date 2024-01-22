@@ -6,7 +6,7 @@ import InputMessagesList from '../InputsMessagesList/InputMessagesList';
 const FullNameInput = () => {
   const { setIsFullNameValid, fullName, setFullName } = useContext(EventRegistrationContext);
   const [validationResult, setValidationResult] = useState({});
-  const [inputModifierClass, setInputModifierClass] = useState({});
+  const [inputModifierClass, setInputModifierClass] = useState('');
 
   const fullNameChange = (event) => {
     setFullName(event.target.value);

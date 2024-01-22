@@ -1,7 +1,7 @@
 export const getEmailValidationResult = (email) => {
   const messagesList = [];
 
-  if (email.length > 0) {
+  if (email.trim().length > 0) {
     if (!/^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/.test(email)) {
       messagesList.push({ text: 'Please Enter Valid Email', isValid: false });
     }

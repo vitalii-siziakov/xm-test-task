@@ -1,8 +1,9 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 export const EventRegistrationContext = createContext(null);
 
 export const EventRegistrationContextProvider = ({ children }) => {
+  const [isRegistrationCompleted, setIsRegistrationCompleted] = useState(false);
   const [currentRegistrationStep, setCurrentRegistrationStep] = useState(1);
   const [firstRegistrationStepProgress, setFirstRegistrationStepProgress] = useState(0);
   const [secondRegistrationStepProgress, setSecondRegistrationStepProgress] = useState(0);
@@ -19,9 +20,31 @@ export const EventRegistrationContextProvider = ({ children }) => {
   const [password, setPassword] = useState('');
   const [isPasswordValid, setIsPasswordValid] = useState('');
 
+  const clearEventRegistrationStates = () => {
+    setCurrentRegistrationStep(1);
+    setFirstRegistrationStepProgress(0);
+    setSecondRegistrationStepProgress(0);
+    setIsFullNameValid('');
+    setIsDateOfBirthValid('');
+    setIsEmailValid('');
+    setIsPasswordValid('');
+
+    setFullName('');
+    setDateOfBirth('');
+    setEmail('');
+    setPassword('');
+  };
+
+  useEffect(() => {
+    isRegistrationCompleted && clearEventRegistrationStates();
+  }, [isRegistrationCompleted]);
+
   return (
     <EventRegistrationContext.Provider
       value={{
+        isRegistrationCompleted,
+        setIsRegistrationCompleted,
+
         currentRegistrationStep,
         setCurrentRegistrationStep,
         firstRegistrationStepProgress,
@@ -47,6 +70,8 @@ export const EventRegistrationContextProvider = ({ children }) => {
         setPassword,
         isPasswordValid,
         setIsPasswordValid,
+
+        clearEventRegistrationStates,
       }}
     >
       {children}

@@ -6,7 +6,7 @@ import InputMessagesList from '../InputsMessagesList/InputMessagesList';
 const PasswordInput = () => {
   const { setIsPasswordValid, password, setPassword } = useContext(EventRegistrationContext);
   const [validationResult, setValidationResult] = useState({});
-  const [inputModifierClass, setInputModifierClass] = useState({});
+  const [inputModifierClass, setInputModifierClass] = useState('');
 
   const passwordChange = (event) => {
     setPassword(event.target.value);

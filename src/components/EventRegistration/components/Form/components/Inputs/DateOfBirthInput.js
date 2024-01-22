@@ -6,7 +6,7 @@ import InputMessagesList from '../InputsMessagesList/InputMessagesList';
 const DateOfBirthInput = () => {
   const { setIsDateOfBirthValid, dateOfBirth, setDateOfBirth } = useContext(EventRegistrationContext);
   const [validationResult, setValidationResult] = useState({});
-  const [inputModifierClass, setInputModifierClass] = useState({});
+  const [inputModifierClass, setInputModifierClass] = useState('');
 
   const dateOfBirthChange = (event) => {
     setDateOfBirth(event.target.value);

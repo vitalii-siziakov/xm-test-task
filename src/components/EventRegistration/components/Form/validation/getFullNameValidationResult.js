@@ -1,8 +1,8 @@
 export const getFullNameValidationResult = (fullName) => {
   const messagesList = [];
 
-  if (fullName.length > 0) {
-    if (!/^[A-Za-z0-9]*$/.test(fullName)) {
+  if (fullName.trim().length > 0) {
+    if (!/^[0-9a-zA-Z\s\\]+$/.test(fullName)) {
       messagesList.push({ text: 'Please Enter Valid Name', isValid: false });
     }
   } else {

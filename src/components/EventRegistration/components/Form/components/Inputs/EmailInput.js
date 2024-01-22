@@ -6,7 +6,7 @@ import InputMessagesList from '../InputsMessagesList/InputMessagesList';
 const EmailInput = () => {
   const { setIsEmailValid, email, setEmail } = useContext(EventRegistrationContext);
   const [validationResult, setValidationResult] = useState({});
-  const [inputModifierClass, setInputModifierClass] = useState({});
+  const [inputModifierClass, setInputModifierClass] = useState('');
 
   const emailChange = (event) => {
     setEmail(event.target.value);
