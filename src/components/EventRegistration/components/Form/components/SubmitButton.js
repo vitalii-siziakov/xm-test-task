@@ -7,6 +7,7 @@ const SubmitButton = () => {
     setCurrentRegistrationStep,
     firstRegistrationStepProgress,
     secondRegistrationStepProgress,
+    showInConsoleEventRegistrationData,
     setIsRegistrationCompleted,
   } = useContext(EventRegistrationContext);
   const [submitButtonText, setSubmitButtonText] = useState('');
@@ -21,6 +22,7 @@ const SubmitButton = () => {
         break;
 
       case 2:
+        showInConsoleEventRegistrationData();
         setIsRegistrationCompleted(true);
         break;
 

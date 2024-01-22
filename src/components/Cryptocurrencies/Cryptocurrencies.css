@@ -50,7 +50,7 @@
 
 .cryptocurrency__fullname {
   background-color: var(--color_09);
-  padding: 2px 8px;
+  padding: 3px 8px 2px 8px;
   border-radius: 3.8px;
 
   color: var(--color_01);

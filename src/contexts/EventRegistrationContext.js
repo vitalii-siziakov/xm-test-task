@@ -20,6 +20,20 @@ export const EventRegistrationContextProvider = ({ children }) => {
   const [password, setPassword] = useState('');
   const [isPasswordValid, setIsPasswordValid] = useState('');
 
+  const showInConsoleEventRegistrationData = () => {
+    const yyyy = dateOfBirth.getFullYear();
+    let mm = dateOfBirth.getMonth() + 1;
+    let dd = dateOfBirth.getDate();
+
+    const registrationData = {
+      fullName,
+      dateOfBirth: `${dd}/${mm}/${yyyy}`,
+      email,
+      password,
+    };
+    console.log(registrationData);
+  };
+
   const clearEventRegistrationStates = () => {
     setCurrentRegistrationStep(1);
     setFirstRegistrationStepProgress(0);
@@ -71,6 +85,7 @@ export const EventRegistrationContextProvider = ({ children }) => {
         isPasswordValid,
         setIsPasswordValid,
 
+        showInConsoleEventRegistrationData,
         clearEventRegistrationStates,
       }}
     >

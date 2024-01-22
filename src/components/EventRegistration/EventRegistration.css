@@ -165,7 +165,6 @@
 .event-registration-form__item {
   display: grid;
   align-self: baseline;
-  row-gap: 5px;
 }
 
 .event-registration-form__label {
@@ -174,11 +173,27 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 5px;
+}
+
+.event-registration-form .event-registration-form__input-date {
+  padding: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100%;
+}
+
+.event-registration-form .react-datepicker__view-calendar-icon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
 }
 
 .event-registration-form__input {
   height: 40px;
   padding-left: 8px;
+  padding-right: 8px;
 
   color: var(--color_01);
   box-sizing: border-box;
