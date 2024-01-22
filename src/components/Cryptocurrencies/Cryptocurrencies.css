@@ -81,6 +81,10 @@
 }
 
 .cryptocurrency__price__change {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+
   margin-top: 9px;
 
   font-family: Roboto;
@@ -88,6 +92,18 @@
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+}
+
+.cryptocurrency__price__change--positive {
+  color: var(--color_10);
+}
+
+.cryptocurrency__price__change--negative {
+  color: var(--color_11);
+}
+
+.cryptocurrency__price__change-symbol {
+  margin-bottom: 2px;
 }
 
 @media screen and (max-width: 1150px) {

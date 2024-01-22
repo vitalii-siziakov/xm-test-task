@@ -78,49 +78,12 @@ export const MainContextProvider = ({ children }) => {
     },
   };
 
-  const [cryptocurrenciesList, setCryptocurrenciesList] = useState([
-    {
-      id: '90',
-      symbol: 'BTC',
-      name: 'Bitcoin',
-      price_usd: '41727.51',
-      percent_change_24h: '0.21',
-    },
-    {
-      id: '80',
-      symbol: 'ETH',
-      name: 'Ethereum',
-      price_usd: '2474.00',
-      percent_change_24h: '0.51',
-    },
-    {
-      id: '58',
-      symbol: 'XRP',
-      name: 'XRP',
-      price_usd: '0.551029',
-      percent_change_24h: '0.81',
-    },
-    {
-      id: '1',
-      symbol: 'LTC',
-      name: 'Litecoin',
-      price_usd: '70.76',
-      percent_change_24h: '0.12',
-    },
-    {
-      id: '2321',
-      symbol: 'BCH',
-      name: 'Bitcoin Cash',
-      price_usd: '240.36',
-      percent_change_24h: '0.80',
-    },
-  ]);
+  const [cryptocurrenciesList, setCryptocurrenciesList] = useState([]);
 
   useEffect(() => {
     (async () => {
       const cryptocurrenciesIds = '90,80,58,1,2321';
       const cryptocurrenciesList = await getCryptocurrenciesList(cryptocurrenciesIds);
-      console.log(cryptocurrenciesList);
       setCryptocurrenciesList(cryptocurrenciesList);
     })();
   }, []);
